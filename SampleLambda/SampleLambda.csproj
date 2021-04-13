@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == ''">
+    <TargetFrameworkIdentifier>.NETCOREAPP</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>3.1</TargetFrameworkVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="2.4.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.0.0" />
+  </ItemGroup>
+</Project>
